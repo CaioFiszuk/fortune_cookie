@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    font-size: 62.5%;
+    --font-title: 'Montserrat', sans-serif;
+    --font-paragraph: 'DM Sans', sans-serif;
+    --font-fortune: 'Dancing Script', cursive;
+    --size-title: 2.4rem;
+    --size-paragraph: 1.5rem;
+}
+
+body{
+    background-image: linear-gradient(45deg, #190361 0%, #BB00FF 100%);
+    animation: gradient 10s ease infinite;
+    background-size: 200% 200%;
+}
+
+.hide{
+    display: none;
+}
+
+/*Screen 1*/
+.screen1{
+    width: 42.8rem;
+    height: 42.4rem;
+    background-color: white;
+    margin: 23.9rem auto;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+.screen1 .container1{
+    width: 30.0rem;
+    height: 31.2rem;
+
+    position: relative;
+    top: 4.8rem;
+    left: 6.4rem;
+}
+
+.screen1 h2, .screen2 h2{
+    font-family: var(--font-title);
+    color: #34355b;
+    font-size: var(--size-title);
+    line-height: 2.9rem;
+    font-weight: 700;
+
+    text-align: center;
+}
+
+.screen1 p{
+
+    font-family: var(--font-paragraph);
+    color: #34355b;
+    font-size: var(--size-paragraph);
+    line-height: 1.9rem;
+    font-weight: 400;
+
+    text-align: center;
+}
+
+.screen1 img:hover{
+    animation: shake 1s;
+}
+
+/*Screen 2*/
+.screen2{
+    width: 42.8rem;
+    height: 56.4rem;
+    background-color: white;
+    margin: 23.9rem auto;
+    box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+    border-radius: 5px;
+}
+
+.screen2 .container2{
+    width: 30.0rem;
+    height: 46.8rem;
+
+    position: relative;
+    top: 4.8rem;
+    left: 6.4rem;
+}
+
+.screen2 .fortune{
+    background-color: #e4edf1;
+    box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+    width: 29.3rem;
+    height: auto;
+    padding: 1.0rem;
+
+    font-family: var(--font-fortune);
+    font-size: 2.4rem;
+    line-height: 2.9rem;
+    text-align: center;
+
+    animation: grow 1s ease-in-out forwards;
+}
+
+.screen2 button{
+    background-color: #ff9500;
+    color: white;
+    border-radius: 4px;
+    border: none;
+
+    margin-top: 1.7rem;
+    margin-left: 6.4rem;
+    padding: 1.6rem;
+
+    font-family: var(--font-paragraph);
+    font-size: 1.5rem;
+    line-height: 2.0rem;
+    font-weight: 700;
+}
+
+.screen2 button:hover{
+    background-color: #dd8100;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@keyframes shake{
+    0%{
+      transform:translateX(-3px);
+    }
+ 
+    10%{
+     transform:translateX(0);
+    }
+ 
+    20%{
+     transform:translateX(-3px);
+    }
+ 
+    30%{
+     transform:translateX(0);
+    }
+ 
+    40%{
+     transform:translateX(-3px);
+    }
+ 
+    50%{
+     transform:translateX(0);
+    }
+ 
+    60%{
+     transform:translateX(-3px);
+    }
+ 
+    70%{
+     transform:translateX(0);
+    }
+ 
+    80%{
+     transform:translateX(-3px);
+    }
+ 
+    90%{
+     transform:translateX(0);
+    }
+ 
+    100%{
+     transform:translateX(-3px);
+    }
+ }
+
+ @keyframes grow{
+    0% {
+        transform: scale(0) translateY(50px);
+      }
+      100% {
+        transform: scale(1) translateY(0);
+      }
+}
